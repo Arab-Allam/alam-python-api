@@ -1,6 +1,3 @@
-Here's an ordered list of steps to put in your README file to help others run the Flask model and integrate it with their application:
-
----
 
 ## Steps to Run the Flask Model
 
