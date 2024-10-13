@@ -44,22 +44,16 @@
 ### 6. **Set the Server IP in Your API**
    Update the URL in your API calls to match the server IP. For example, in your React Native code, replace `YOUR_SERVER_IP` with the actual IP:
 
+   ```javascript
    const response = await fetch('http://<YOUR_SERVER_IP>:5000/run-model', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        sentence: "Your input sentence here",
-        word: "Your target word here",
-        irab: "Your irab value here"
-      }),
-    });
-    
-    const json = await response.json();
-    console.log('Result:', json.result);
-    console.log('Analysis:', json.analysis);
-  } catch (error) {
-    console.error('Error:', error);
-  }
+     method: 'POST',
+     headers: {
+       'Content-Type': 'application/json',
+     },
+     body: JSON.stringify({
+       sentence: 'Your sentence here',
+       word: 'Your word here',
+       irab: 'Your irab here',
+     }),
+   });
    ```
