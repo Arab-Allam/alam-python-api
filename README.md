@@ -55,5 +55,10 @@
        word: 'Your word here',
        irab: 'Your irab here',
      }),
+
+      const data = await response.json();
+      console.log(data);
+
+
    });
    ```
