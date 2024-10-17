@@ -58,6 +58,27 @@
 
       const data = await response.json();
       console.log(data);
+     
+      const analysis = data.analysis;
+
+                // Extract final_answer and correct_irab
+                let extractedFinalAnswer = null;
+                let extractedCorrectIrab = null;
+
+                if (analysis.includes("الإجابة النهائية")) {
+                    extractedFinalAnswer = analysis.split("الإجابة النهائية:")[1].split("\n")[0].trim();
+                }
+
+                const correctIrabMatch = analysis.match(/- الإعراب الصحيح:\s*(.+)/);
+                if (correctIrabMatch) {
+                    extractedCorrectIrab = correctIrabMatch[1].trim();
+                }
+
+                // then here just you will need to save these var
+                // data.result;
+                // extractedFinalAnswer;
+                // extractedCorrectIrab;
+
 
 
    });
