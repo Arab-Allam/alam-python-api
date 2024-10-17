@@ -83,6 +83,9 @@
 
    });
    ```
+
+
+### 7. **Code to generate randomIrab **
   ```javascript
 
 const generateRandomIrab = (correctIrab) => {
