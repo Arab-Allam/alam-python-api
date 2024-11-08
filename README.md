@@ -1,3 +1,6 @@
+##
+This the backend code for the game, of Game built using Python and Flask.
+
 
 ## Steps to Run the Flask Model
 
